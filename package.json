@@ -1,0 +1,21 @@
+{
+  "name": "mi4uokai",
+  "displayName": "mi4uokai",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "mi4uokai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/mi4uokai-color-theme.json"
+      }
+    ]
+  }
+}
