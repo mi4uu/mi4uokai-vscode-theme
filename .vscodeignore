@@ -6,3 +6,5 @@ vsc-extension-quickstart.md
 secrets
 secrets/**
 secrets/*
+node_modules
+build

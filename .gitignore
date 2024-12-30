@@ -5,3 +5,4 @@ secrets/azure-publish-key.txt
 secrets
 secrets/**
 secrets/*
+dist

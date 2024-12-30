@@ -1,45 +1,80 @@
 {
-  "name": "mi4uokai",
-  "displayName": "mi4uokai",
-  "publisher": "Michami4uuLipiski",
-  "author": {
-    "email": "michal.lipinski@gmail.com",
-    "name": "Michał \"mi4uu\" Lipiński"
-  },
-  "repository": {
-    "url": "https://github.com/mi4uu/mi4uokai-vscode-theme"
-  },
-  "pricing": "Free",
-  "icon": "media/icon.png",
-  "galleryBanner": {
-    "color": "#3a4449"
-  },
-  "description": "",
-  "version": "0.0.10",
-  "engines": {
-    "vscode": "^1.96.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "packageManager": "bun@1.1.42",
-  "scripts": {
-    "build": "vsce package",
-    "publish": "bun run build && vsce publish",
-    "publish:openvsx":"ovsx publish -p \"$(cat ./secrets/open-vsx.txt)\"",
-    "publish:patch": "bun run build && vsce publish patch &&& bun run publish:openvsx"
-  },
-  "contributes": {
-    "themes": [
-      {
-        "label": "mi4uokai",
-        "uiTheme": "vs-dark",
-        "path": "./themes/mi4uokai-color-theme.json"
-      }
-    ]
-  },
-  "devDependencies": {
-    "ovsx": "^0.10.1",
-    "vsce": "^2.15.0"
-  }
+	"name": "mi4uokai",
+	"displayName": "mi4uokai",
+	"publisher": "Michami4uuLipiski",
+	"author": {
+		"email": "michal.lipinski@gmail.com",
+		"name": "Michał \"mi4uu\" Lipiński"
+	},
+	"repository": {
+		"url": "https://github.com/mi4uu/mi4uokai-vscode-theme"
+	},
+	"pricing": "Free",
+	"icon": "media/icon.png",
+	"galleryBanner": {
+		"color": "#3a4449",
+		"theme": "dark"
+	},
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		},
+		"virtualWorkspaces": true
+	},
+	"description": "monokai modified dark theme with sharp icons",
+	"version": "0.0.10",
+	"engines": {
+		"vscode": "^1.96.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"license": "MIT",
+	"keywords": [
+		"icons",
+		"icon theme",
+		"customization",
+		"theme",
+		"file icons",
+		"theme with icons"
+	],
+	"packageManager": "bun@1.1.42",
+	"scripts": {
+		"build": "bun ./build && vsce package",
+		"publish": "bun run build && vsce publish",
+		"publish:openvsx": "ovsx publish -p \"$(cat ./secrets/open-vsx.txt)\"",
+		"publish:patch": "bun run build && vsce publish patch && bun run publish:openvsx"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "mi4uokai",
+				"uiTheme": "vs-dark",
+				"path": "./themes/mi4uokai-color-theme.json"
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "sharp-icons_mi4uokai_folderless",
+				"label": "mi4uokai - Sharp Icons - mi4uokai - No Folders",
+				"path": "dist/mi4uokai/folderless.json"
+			},
+			{
+				"id": "sharp-icons_mi4uokai",
+				"label": "mi4uokai - Sharp Icons - mi4uokai",
+				"path": "dist/mi4uokai/normal.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"ovsx": "^0.10.1",
+		"vsce": "^2.15.0",
+		"sharp": "0.33.5",
+		"typescript": "5.6.2",
+		"xmlbuilder2": "^3.1.1"
+	}
 }
