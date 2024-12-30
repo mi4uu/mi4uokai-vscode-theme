@@ -1,6 +1,14 @@
 {
   "name": "mi4uokai",
   "displayName": "mi4uokai",
+  "publisher": "Michami4uuLipiski",
+  "author": {
+    "email": "michal.lipinski@gmail.com",
+    "name": "Michał \"mi4uu\" Lipiński"
+  },
+  "repository": {
+    "url": "https://github.com/mi4uu/mi4uokai-vscode-theme"
+  },
   "description": "",
   "version": "0.0.1",
   "engines": {
