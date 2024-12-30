@@ -11,11 +11,11 @@
   },
   "pricing": "Free",
   "icon": "./media/icon.png",
-  "galleryBanner":{
+  "galleryBanner": {
     "color": "#3a4449"
   },
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.96.0"
   },
