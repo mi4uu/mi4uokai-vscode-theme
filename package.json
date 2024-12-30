@@ -37,10 +37,8 @@
       }
     ]
   },
-  "extensionDependencies": [
-    "CiberTurtle.sharp-icons"
-  ],
   "devDependencies": {
+    "ovsx": "^0.10.1",
     "vsce": "^2.15.0"
   }
 }
