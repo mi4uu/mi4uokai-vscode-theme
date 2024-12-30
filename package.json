@@ -9,6 +9,11 @@
   "repository": {
     "url": "https://github.com/mi4uu/mi4uokai-vscode-theme"
   },
+  "pricing": "Free",
+  "icon": "./media/icon.png",
+  "galleryBanner":{
+    "color": "#3a4449"
+  },
   "description": "",
   "version": "0.0.2",
   "engines": {

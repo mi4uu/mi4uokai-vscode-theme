@@ -1,2 +1,5 @@
 # mi4uokai README
-modokai modified dark theme
+monokai modified dark theme (but not very dark)
+
+
+[screenshot v0.0.1](./media/Screenshot_20241230_194346.png)
