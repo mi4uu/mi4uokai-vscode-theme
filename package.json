@@ -10,12 +10,12 @@
     "url": "https://github.com/mi4uu/mi4uokai-vscode-theme"
   },
   "pricing": "Free",
-  "icon": "https://github.com/mi4uu/mi4uokai-vscode-theme/blob/master/media/icon.png",
+  "icon": "./media/icon.png",
   "galleryBanner": {
     "color": "#3a4449"
   },
   "description": "",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -25,8 +25,8 @@
   "packageManager": "bun@1.1.42",
   "scripts": {
     "build": "vsce package",
-    "publish": "vsce publish",
-    "publish:patch": "vsce publish patch"
+    "publish": "bun run build && vsce publish",
+    "publish:patch": "bun run build && vsce publish patch"
   },
   "contributes": {
     "themes": [
