@@ -17,6 +17,12 @@
   "categories": [
     "Themes"
   ],
+  "packageManager": "bun@1.1.42",
+  "scripts": {
+    "build": "vsce package",
+    "publish": "vsce publish",
+    "publish:patch": "vsce publish patch"
+  },
   "contributes": {
     "themes": [
       {
@@ -25,5 +31,8 @@
         "path": "./themes/mi4uokai-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
   }
 }
