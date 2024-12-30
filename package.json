@@ -60,21 +60,23 @@
 		"iconThemes": [
 			{
 				"id": "sharp-icons_mi4uokai_folderless",
-				"label": "mi4uokai - Sharp Icons - mi4uokai - No Folders",
+				"label": "mi4uokai - Sharp Icons - Mi4uokai - No Folders",
 				"path": "dist/mi4uokai/folderless.json"
 			},
 			{
 				"id": "sharp-icons_mi4uokai",
-				"label": "mi4uokai - Sharp Icons - mi4uokai",
+				"label": "mi4uokai - Sharp Icons - Mi4uokai",
 				"path": "dist/mi4uokai/normal.json"
 			}
 		]
 	},
 	"devDependencies": {
+		"@types/bun": "^1.1.14",
+		"colorjs.io": "^0.5.2",
 		"ovsx": "^0.10.1",
-		"vsce": "^2.15.0",
 		"sharp": "0.33.5",
 		"typescript": "5.6.2",
+		"vsce": "^2.15.0",
 		"xmlbuilder2": "^3.1.1"
 	}
 }
