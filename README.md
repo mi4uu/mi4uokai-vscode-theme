@@ -2,7 +2,11 @@
 monokai modified dark theme (but not very dark)
 uses modified sharp icons 
 
-![screenshot v0.0.1](./media/Screenshot_20241230_194346.png)
+#### base theme:
+![screenshot base](./media/Screenshot_20241230_194346.png)
+
+#### alt theme:
+![screenshot alt](./media/Screenshot_20250126_161646.png)
 
 
 ## install
