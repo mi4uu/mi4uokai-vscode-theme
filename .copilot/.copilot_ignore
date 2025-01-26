@@ -1,0 +1,9 @@
+node_modules
+*.vsix
+secrets/azure-publish-key.txt
+**/secrets
+secrets
+secrets/**
+secrets/*
+dist
+.copilot

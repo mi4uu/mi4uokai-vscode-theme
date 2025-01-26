@@ -55,6 +55,11 @@
 				"label": "mi4uokai",
 				"uiTheme": "vs-dark",
 				"path": "./themes/mi4uokai-color-theme.json"
+			},
+			{
+				"label": "mi4uokai-alt",
+				"uiTheme": "vs-dark",
+				"path": "./themes/mi4uokai-color-theme-alt.json"
 			}
 		],
 		"iconThemes": [

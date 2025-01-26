@@ -10,9 +10,19 @@ const change_l=(color:string,v:number)=>{
 	c.lch.l=v
 	return c.toString()
 }
-const make_darker=(color:string)=>change_l(color,41)
-const make_darker_more=(color:string)=>change_l(color,10)
-const make_lighter=(color:string)=>change_l(color,60)
+const make_darker=(color:string)=>{
+	let c = new Color(color)
+	c.darken()
+	return c.toString()
+}
+const make_lighter=(color:string)=>{
+	let c = new Color(color)
+	c.lighten()
+	return c.toString()
+}
+// const make_darker=(color:string)=>change_l(color,41)
+// const make_darker_more=(color:string)=>change_l(color,10)
+// const make_lighter=(color:string)=>change_l(color,60)
 const make_lighter_more=(color:string)=>change_l(color,80)
 const make_lighter_more2=(color:string)=>change_l(color,90)
 
@@ -54,12 +64,19 @@ const palette = {
 	black:"#000000"
 };
 palette['red_strong']=make_lighter(palette.red)
-palette['gray_light']=make_lighter(palette.gray)
-palette['gray_dark']=make_darker(palette.gray)
-palette['foreground_light']=make_lighter_more(palette.foreground)
-palette['bg_dark']=make_darker_more(palette.bg)
-palette['yellow_bright']=make_lighter_more2(palette.yellow)
+// palette['gray_light']=make_lighter(palette.gray)
+// palette['gray_dark']=make_darker(palette.gray)
+// palette['foreground_lighter']=make_lighter_more(palette.foreground)
+// palette['bg_dark']=make_darker(palette.bg)
+// palette['yellow_bright']=make_lighter_more2(palette.yellow)
 for(const [k,v] of Object.entries(palette)){
+	palette[`${k}_light`]=make_lighter(v)
+	palette[`${k}_lighter`]=make_lighter(palette[`${k}_light`])
+	palette[`${k}_bright`]=make_lighter(palette[`${k}_lighter`])
+	palette[`${k}_dark`]=make_darker(v)
+	palette[`${k}_darker`]=make_darker(palette[`${k}_dark`])
+	palette[`${k}_darkest`]=make_darker(palette[`${k}_darker`])
+
 	palette[`${k}_alpha01`]=make_alpha_01(v)
 	palette[`${k}_alpha02`]=make_alpha_02(v)
 	palette[`${k}_alpha03`]=make_alpha_03(v)
